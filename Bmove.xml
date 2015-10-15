@@ -8,6 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="1028" inline="false">
+        <mutation else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="1075" inline="true">
             <field name="OP">LT</field>
@@ -18,30 +19,26 @@
             </value>
             <value name="B">
               <block type="math_number" id="1089">
-                <field name="NUM">75</field>
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="led_select" id="1098" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="1114">
-                <field name="NUM">5</field>
+          <block type="movement_stop" id="1128"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_repeat" id="1145" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="1152">
+                <field name="NUM">1000000</field>
               </block>
             </value>
+            <statement name="DO">
+              <block type="movement_forward" id="1138"></block>
+            </statement>
           </block>
         </statement>
-        <next>
-          <block type="robot_delay" id="911" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="918">
-                <field name="NUM">150</field>
-              </block>
-            </value>
-          </block>
-        </next>
       </block>
     </statement>
   </block>
