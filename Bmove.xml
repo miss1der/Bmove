@@ -1,26 +1,26 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="221" inline="true" x="28" y="90">
+  <block type="controls_repeat" id="275" inline="true" x="79" y="181">
     <value name="TIMES">
-      <block type="math_number" id="238">
-        <field name="NUM">4</field>
+      <block type="math_number" id="323">
+        <field name="NUM">360</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="10">
+      <block type="movement_forward" id="257">
         <next>
-          <block type="robot_delay" id="51" inline="true">
+          <block type="robot_delay" id="308" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="60">
-                <field name="NUM">3000</field>
+              <block type="math_number" id="282">
+                <field name="NUM">10</field>
               </block>
             </value>
             <next>
-              <block type="movement_right" id="174">
+              <block type="movement_left" id="267">
                 <next>
-                  <block type="robot_delay" id="182" inline="true">
+                  <block type="robot_delay" id="309" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="189">
-                        <field name="NUM">1300</field>
+                      <block type="math_number" id="316">
+                        <field name="NUM">10</field>
                       </block>
                     </value>
                   </block>
@@ -31,8 +31,5 @@
         </next>
       </block>
     </statement>
-    <next>
-      <block type="movement_stop" id="231"></block>
-    </next>
   </block>
 </xml>
