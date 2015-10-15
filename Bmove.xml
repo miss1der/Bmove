@@ -14,7 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="439">
-            <field name="TEXT">I watch vines</field>
+            <field name="TEXT">Nahani + Barondale = Bristol</field>
           </block>
         </next>
       </block>
