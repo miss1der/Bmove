@@ -38,7 +38,7 @@
                   <block type="robot_delay" id="1883" inline="true">
                     <value name="DELAY">
                       <block type="math_number" id="1890">
-                        <field name="NUM">1500</field>
+                        <field name="NUM">1000</field>
                       </block>
                     </value>
                   </block>
@@ -48,7 +48,17 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="1617"></block>
+          <block type="movement_forward" id="1617">
+            <next>
+              <block type="robot_delay" id="1897" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="1921">
+                    <field name="NUM">1500</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </statement>
         <next>
           <block type="robot_delay" id="1774" inline="true">
