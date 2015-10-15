@@ -25,15 +25,29 @@
             <next>
               <block type="oled_cleardisplay" id="690">
                 <next>
-                  <block type="oled_drawtext" id="674">
-                    <field name="TEXT">BEEDO</field>
+                  <block type="oled_setcursor" id="706" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="713">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="729">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="robot_delay" id="573" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="580">
-                            <field name="NUM">200</field>
+                      <block type="oled_drawtext" id="674">
+                        <field name="TEXT">BEEDO</field>
+                        <next>
+                          <block type="robot_delay" id="573" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="580">
+                                <field name="NUM">200</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
