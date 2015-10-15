@@ -25,7 +25,7 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_stop" id="1128"></block>
+          <block type="movement_stutter" id="1172"></block>
         </statement>
         <statement name="ELSE">
           <block type="controls_repeat" id="1145" inline="true">
