@@ -23,12 +23,17 @@
               </block>
             </value>
             <next>
-              <block type="robot_delay" id="573" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="580">
-                    <field name="NUM">200</field>
+              <block type="oled_drawtext" id="674">
+                <field name="TEXT">BEEDO</field>
+                <next>
+                  <block type="robot_delay" id="573" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="580">
+                        <field name="NUM">200</field>
+                      </block>
+                    </value>
                   </block>
-                </value>
+                </next>
               </block>
             </next>
           </block>
