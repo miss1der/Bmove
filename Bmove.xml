@@ -1,77 +1,77 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1237" inline="false" x="-524" y="-21">
+  <block type="controls_whileUntil" id="1857" inline="false" x="-423" y="-30">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="1254">
+      <block type="sensor_button" id="1880">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="1268" inline="false">
+      <block type="controls_if" id="1638" inline="false">
         <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="1298" inline="true">
+          <block type="logic_compare" id="1665" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="1314">
+              <block type="sensor_object" id="1679">
                 <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="1321">
-                <field name="NUM">50</field>
+              <block type="math_number" id="1693">
+                <field name="NUM">75</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="led_select" id="1345" inline="true">
+          <block type="led_select" id="1705" inline="true">
             <field name="ACTION">FLASH</field>
             <value name="LED">
-              <block type="math_number" id="1352">
+              <block type="math_number" id="1695">
                 <field name="NUM">0</field>
               </block>
             </value>
             <next>
-              <block type="movement_right" id="1362"></block>
+              <block type="movement_right" id="1746"></block>
             </next>
           </block>
         </statement>
         <value name="IF1">
-          <block type="logic_compare" id="1381" inline="true">
+          <block type="logic_compare" id="1672" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="1388">
+              <block type="sensor_object" id="1686">
                 <field name="OBJECT">RIGHTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="1389">
-                <field name="NUM">50</field>
+              <block type="math_number" id="1696">
+                <field name="NUM">75</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO1">
-          <block type="led_select" id="1390" inline="true">
+          <block type="led_select" id="1724" inline="true">
             <field name="ACTION">FLASH</field>
             <value name="LED">
-              <block type="math_number" id="1391">
+              <block type="math_number" id="1694">
                 <field name="NUM">5</field>
               </block>
             </value>
             <next>
-              <block type="movement_left" id="1408"></block>
+              <block type="movement_left" id="1763"></block>
             </next>
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="1418"></block>
+          <block type="movement_forward" id="1617"></block>
         </statement>
         <next>
-          <block type="robot_delay" id="1526" inline="true">
+          <block type="robot_delay" id="1774" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="1533">
+              <block type="math_number" id="1781">
                 <field name="NUM">100</field>
               </block>
             </value>
@@ -80,7 +80,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="1544"></block>
+      <block type="movement_stop" id="1791"></block>
     </next>
   </block>
 </xml>
