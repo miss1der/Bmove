@@ -14,26 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="439">
-            <field name="TEXT">9 + 10 = P0TAT</field>
-            <next>
-              <block type="oled_drawnumber" id="448" inline="true">
-                <value name="NUMBER">
-                  <block type="math_arithmetic" id="455" inline="true">
-                    <field name="OP">ADD</field>
-                    <value name="A">
-                      <block type="math_number" id="462">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="470">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </next>
+            <field name="TEXT">I watch vines</field>
           </block>
         </next>
       </block>
