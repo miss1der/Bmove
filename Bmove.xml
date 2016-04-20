@@ -68,26 +68,26 @@
               </block>
             </value>
             <next>
-              <block type="oled_setcursor" id="131" inline="true">
+              <block type="oled_setcursor" id="17" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="138">
+                  <block type="math_number" id="18">
                     <field name="NUM">27</field>
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="145">
+                  <block type="math_number" id="19">
                     <field name="NUM">0</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_linerect" id="42">
+                  <block type="oled_linerect" id="20">
                     <field name="OBJECT">RECT</field>
                     <next>
-                      <block type="oled_cleardisplay" id="51">
+                      <block type="oled_cleardisplay" id="21">
                         <next>
-                          <block type="oled_drawnumber" id="110" inline="true">
+                          <block type="oled_drawnumber" id="22" inline="true">
                             <value name="NUMBER">
-                              <block type="math_random" id="58"></block>
+                              <block type="math_random" id="23"></block>
                             </value>
                           </block>
                         </next>
@@ -102,7 +102,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="17"></block>
+      <block type="movement_stop" id="24"></block>
     </next>
   </block>
 </xml>
